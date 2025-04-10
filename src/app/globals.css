@@ -33,5 +33,16 @@
 
   --color-primary-glow: rgba(68, 229, 231, 0.2);
   --color-primary-50-glow: rgba(236, 252, 253, 0.2);
-  --breakpoint-sm:430px
+  --breakpoint-sm:430px;
+  --color-chestnut : #973F29;
+}
+
+.primary-glow{
+  @apply drop-shadow-[0px_5px_25px_var(--color-primary-glow)]
+}
+.primary-glow-hover{
+  @apply drop-shadow-[0px_0px_25px_var(--color-primary-50-glow)]
+}
+.transition-properties{
+  @apply transition-all duration-150
 }
