@@ -3,6 +3,7 @@ import Page from '@/components/sections/Page'
 import Header from '@/components/sections/Header'
 import Navigation from '@/components/sections/Navigation'
 import Hero from '@/components/sections/Hero'
+import Reviews from '@/components/sections/Reviews'
 
 
 const page = () => {
@@ -12,7 +13,9 @@ const page = () => {
       <Header>
         <Navigation/>
         <Hero/>
+        <Reviews/>
       </Header>
+      
       </Page>
    </div>
   )

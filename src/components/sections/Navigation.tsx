@@ -11,7 +11,7 @@ function Navigation() {
         <p className="text-xl font-bold tracking-tight ">NoteFlow</p>
       </a>
 
-      <ul className="flex gap-2">
+      <ul className="flex gap-2 lg:visible">
         {navigationLinks.map((link) => (
           <li key={link.id}>
             <a href={link.href}>{link.link}</a>
