@@ -4,10 +4,11 @@ interface PageProps{
     children:ReactNode
 }
 
-
-function main({children}:PageProps){
-    return <div>{children}</div>
+export const Main=({children}: PageProps )=>{
+    return(
+    <div className="">
+        {children}
+    </div>)
 }
 
 
-export default main

@@ -6,7 +6,7 @@ interface PageProps{
 
 const Page = ({children}:PageProps) => {
   return (
-    <div className='bg-gradient-to-b from-primary-1300 to-primary-1500'>
+    <div className='bg-gradient-to-bottom'>
         {children}
     
     </div>

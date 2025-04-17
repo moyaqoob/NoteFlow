@@ -14,7 +14,8 @@ const Reviews = () => {
                 />
             </li>
         ))}
-        <p className='text-primary-50 text-lg md:text-md pl-5'>Trusted by <span className='text-primary-500 font-semibold'>12,435+ </span>productivity junkies</p>
+        <p className='text-primary-50 text-lg md:text-md pl-5'>
+          Trusted by <span className='text-primary-500 font-semibold'>12,435+ </span>productivity junkies</p>
     </div>
   )
 }
