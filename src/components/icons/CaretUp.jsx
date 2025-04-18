@@ -4,7 +4,7 @@ export default function CaretUp({
   width = 1.5,
   className,
   alt,
-  activeQuestion,
+  activeQuestion
 }) {
   return (
     <motion.svg

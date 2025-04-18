@@ -8,12 +8,12 @@ import { IoIosArrowUp } from "react-icons/io";
 
 const FAQ = ({question,activeQuestion,handleQuestionClick}:any) => {
     const itemVariants = {
-        hidden : {opacity:0,y:20},
+        hidden : {opacity:0,y:30},
         visible:{opacity:1,y:0} 
     }
     
    return (
-    <motion.li variants={itemVariants}  className='shrink-0 grow-0 pt-12'>
+    <motion.li variants={itemVariants}  className='shrink-0 grow-0 pt-10'>
         <button
             className='flex w-full items-center cursor-pointer'
             onClick={()=>handleQuestionClick(question.id)}
@@ -44,11 +44,9 @@ const FAQ = ({question,activeQuestion,handleQuestionClick}:any) => {
                 paddingTop:"1rem"
             }:{}
         }
-        transition={{duration:0.3, ease:"easeIn"}}
+        transition={{duration:0.5, ease:"easeIn"}}
          >{question.answer}
          </motion.p>
-
-
     </motion.li>
     
   )

@@ -9,6 +9,8 @@ import { Main } from '@/components/sections/main'
 import noise from "../public/assets/Noise.webp"
 import Features from '@/components/sections/Features'
 import FAQ from '@/components/sections/FAQ/FAQs'
+import Testimonial from '@/components/sections/Testimonials/Testimonial'
+import Footer from '@/components/sections/Footer'
 const page = () => {
   return (
    <div>
@@ -22,6 +24,8 @@ const page = () => {
         <Logo/>
         <Features/>
         <FAQ/>
+        <Testimonial/>
+        <Footer/>
         
       </Main>
       </Page>
