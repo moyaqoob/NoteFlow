@@ -6,11 +6,12 @@ import Hero from '@/components/sections/Hero'
 import Reviews from '@/components/sections/Reviews'
 import Logo from '@/components/sections/logo'
 import { Main } from '@/components/sections/main'
-import noise from "../public/assets/Noise.webp"
 import Features from '@/components/sections/Features'
 import FAQ from '@/components/sections/FAQ/FAQs'
 import Testimonial from '@/components/sections/Testimonials/Testimonial'
 import Footer from '@/components/sections/Footer'
+import Modal from '@/components/sections/Modal/Modal'
+import SignUpModal from '@/components/sections/Modal/SignupModal'
 const page = () => {
   return (
    <div>
@@ -25,9 +26,12 @@ const page = () => {
         <Features/>
         <FAQ/>
         <Testimonial/>
-        <Footer/>
         
       </Main>
+     
+
+
+        <Footer/>        
       </Page>
    </div>
   )

@@ -7,7 +7,7 @@ interface HeaderProps{
 function Header({children}:HeaderProps){
   
   return (
-    <div className="bg-gradient-to-b py-10">
+    <div className="bg-gradient-to-bottom py-10">
         {children}
     </div>
   );

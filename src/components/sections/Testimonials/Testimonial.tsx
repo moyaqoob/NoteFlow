@@ -23,7 +23,7 @@ const Testimonial = () => {
         </div>
 
        <div className='mb-20 grid grid-cols-3  gap-x-6 pt-10'>
-       <  TestimonialList testimonials={test.slice(0, extended ? 5 : 2)} />
+          <TestimonialList testimonials={test.slice(0, extended ? 5 : 2)} />
           <TestimonialList testimonials={test.slice(6, extended ? 11 : 8)} />
           <TestimonialList testimonials={test.slice(10, extended ? 15 : 12)} />
        </div>

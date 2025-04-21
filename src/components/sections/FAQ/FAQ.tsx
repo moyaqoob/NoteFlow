@@ -45,6 +45,7 @@ const FAQ = ({question,activeQuestion,handleQuestionClick}:any) => {
             }:{}
         }
         transition={{duration:0.5, ease:"easeIn"}}
+        layout
          >{question.answer}
          </motion.p>
     </motion.li>
