@@ -6,10 +6,11 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <div className="m-auto grid max-w-[90rem] grid-cols-2 items-center px-16 py-20 gap-x-12">
+    <div className="m-auto grid max-w-[90rem] grid-cols-[5fr_4fr] max-xl:grid-cols-2 items-center px-24 py-42 gap-x-18 
+    max-xl:gap-x-12 max-xl:px-16 max-xl:py-38">
       {/* Left Column */}
       <div>
-        <h1 className="text-primary-50 mb-6 text-6xl font-semibold tracking-tight md:text-5xl sm:text-3xl">
+        <h1 className="text-primary-50 mb-6 text-6xl font-semibold tracking-tight max-xl:mb-4 max-xl:text-5xl/16 ">
           AI-Powered Notes. Organize and Summarize in Seconds.
         </h1>
         <p className="text-primary-100 text-xl font-light leading-relaxed">
@@ -19,10 +20,11 @@ const Hero = () => {
         <button
           className="flex border rounded-full items-center bg-primary-500
           border-primary-500 hover:border-primary-50 hover:bg-primary-50 transition-all
-          ease-in-out primary-glow-hover group cursor-pointer gap-x-3 px-8 py-3.5 mt-6">
-          <p className="text-lg">Get Started</p>
+          ease-in-out primary-glow-hover group cursor-pointer gap-x-3 px-8 py-3.5 mt-6
+          max-xl:gap-x-2.5 max-xl:px-5 max-xl:py-3 ">
+          <p className="text-lg/8 max-xl:text-base/loose">Get Started</p>
 
-          <div className="w-5">
+          <div className="w-5 max-xl:w-4">
             {/* Line that grows on hover */}
             <ArrowRightLine
               alt="Arrow right line"
@@ -42,7 +44,6 @@ const Hero = () => {
 
       {/* Right Column */}
       <div className="relative flex justify-center">
-        <div className="bg-primary-1300 absolute inset-0 rounded-full"></div>
         <Image
           src={HeroGraphic}
           alt="Hero graphic note summarizer functionality"
