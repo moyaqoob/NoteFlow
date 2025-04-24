@@ -4,8 +4,17 @@ import React from 'react'
 import {motion}  from "motion/react"
 import { IoIosArrowUp } from "react-icons/io";
 
-
-const FAQ = ({question,activeQuestion,handleQuestionClick}:any) => {
+const FAQ = ({question,activeQuestion,handleQuestionClick}:{
+    question: {
+        id: number;
+        Icon: React.FC<{ width?: number; className: string; alt: string }>;
+        question: string;
+        answer: string;
+        alt: string;
+      };
+      activeQuestion: number | null;
+      handleQuestionClick: (id: number | null) => void;
+}) => {
     const itemVariants = {
         hidden : {opacity:0,y:30},
         visible:{opacity:1,y:0} 

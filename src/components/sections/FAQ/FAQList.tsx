@@ -8,7 +8,7 @@ export interface FAQProps {
   questions: {
     id: number;
     alt: string;
-    Icon: ({ width, className, alt }: { width?: number | undefined; className: any; alt: any }) => JSX.Element;
+    Icon: ({ width, className, alt }: { width?: number | undefined; className: string; alt: string }) => JSX.Element;
     question: string;
     answer: string;
   }[];

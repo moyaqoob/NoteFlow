@@ -9,7 +9,6 @@ interface TestimonialItemProps{
 }
 
 const TestimonialItem = ({ test }: TestimonialItemProps) => {
-    const {rating} = test;
 
     const validRating = Math.max(0,Math.min(5,test.rating??0))
     return (

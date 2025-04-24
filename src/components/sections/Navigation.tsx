@@ -3,7 +3,6 @@
 import { navigationLinks } from "@/utils/content";
 import Logo from "@/public/assets/Logo.svg"
 import Image from "next/image";
-import { useState } from "react";
 
 
 function Navigation() {

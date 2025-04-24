@@ -4,27 +4,32 @@ import { frequentlyAskedQuestions } from '@/utils/content'
 import FAQList from "@/components/sections/FAQ/FAQList"
 
 
+
 const FAQs = () => {
-  const [category, setActiveCategory] = React.useState("General")
-  const [activequestion,setActiveQuestion] = React.useState(null)
+    const [category, setActiveCategory] = React.useState<string>("General");
+    const [activeQuestion, setActiveQuestion] = React.useState<number | null>(null);
 
-  const categoryobj = frequentlyAskedQuestions.filter((obj)=>(
-    obj.category == category
-  )).at(0)
+    const categoryObj = frequentlyAskedQuestions
+      .filter((obj) => obj.category === category)
+      .at(0);
 
-  const questionsArr = categoryobj?.questions
+    const questionsArr= categoryObj?.questions || [];
 
-  const handleQuestionClick = (id:any|null):void=>{
-      id === activequestion ? setActiveQuestion(null) : setActiveQuestion(id)
-  }
+    const handleQuestionClick = (id: number | null): void => {
+        if(id == activeQuestion){
+          setActiveQuestion(null)
+        }else{
+          setActiveQuestion(id)
+        }
+    };
 
-  const handleCategory = (category:any)=>{
-      setActiveCategory(category)
+    const handleCategory = (category: string): void => {
       setActiveQuestion(null);
-  }
+      setActiveCategory(category);
+    };
 
 
-  return (
+    return (
     <section className='bg-gradient-to-bottom justify-items-center -z-1 max-w-screen  border-white pb-10 pt-10'>
       <div className=' max-w-[90rem]'>
           <h1 className='text-primary-50 text-center text-6xl/10 tracking-tight sm:text-5xl '>Frequently Asked Questions</h1>
@@ -47,11 +52,11 @@ const FAQs = () => {
               </li>
             ))}
           </ul>
-            <div className='-mt-7'>
+            <div className='-mt-16'>
               <FAQList
                 category = {category}
-                questions = {questionsArr ?? []}
-                activeQuestion = {activequestion}
+                questions = {questionsArr}
+                activeQuestion = {activeQuestion}
                 handleQuestionClick = {handleQuestionClick}
               />
             </div>
