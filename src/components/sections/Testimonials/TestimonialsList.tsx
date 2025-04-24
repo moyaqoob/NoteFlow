@@ -5,7 +5,7 @@ import type { StaticImport } from 'next/dist/shared/lib/get-img-props';
 export interface TestimonialProps {
   id?: number;
   rating?: number | 0;
-  src?: string | StaticImport | undefined;
+  src?: string | StaticImport;
   description?: string;
   name?: string;
   title?: string;
