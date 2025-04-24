@@ -1,11 +1,12 @@
 import React from 'react'
 import type { StaticImageData } from 'next/image'
 import TestimonialItem from "./Testimonials"
+import type { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
 export interface TestimonialProps {
   id?: number;
   rating?: number | 0;
-  src?: StaticImageData;
+  src?: string | StaticImport;
   description?: string;
   name?: string;
   title?: string;
