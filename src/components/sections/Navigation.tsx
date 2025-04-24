@@ -7,7 +7,7 @@ import { useState } from "react";
 
 
 function Navigation() {
-  const [mobileMenuOpen,setMobileMenuOpen] = useState(false)
+  // const [mobileMenuOpen,setMobileMenuOpen] = useState(false)
     
   return (
     <nav className="text-primary-50 flex m-auto items-center max-w-[90rem] justify-between px-24 text-lg/8 lg:px-24 sm:px-12 ">

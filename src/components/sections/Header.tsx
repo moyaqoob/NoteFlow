@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import Hero from "./Hero";
 
 interface HeaderProps{
   children:ReactNode

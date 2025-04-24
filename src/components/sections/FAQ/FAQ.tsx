@@ -1,7 +1,6 @@
 "use client"
+
 import React from 'react'
-import type { FAQProps } from './FAQList'
-import Image from 'next/image';
 import {motion}  from "motion/react"
 import { IoIosArrowUp } from "react-icons/io";
 

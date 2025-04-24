@@ -17,12 +17,12 @@ const Testimonial = () => {
 
             <h1 className='font-bold text-primary-100 text-6xl/tight text-center'>What our AI-powered notetakers have to say</h1>
 
-            <p className='font-light  text-primary-100 px-2 text-xl/10 mr-1 max-w-2xl text-center'>Noteflow has helped 1000's supercharge their productivity 
+            <p className='font-light  text-primary-100 px-2 text-xl/10 mr-1 max-w-2xl text-center'>Noteflow has helped 1000&apos;s supercharge their productivity 
                 With cutting edge AI note taking tool
             </p>
         </div>
 
-       <div className='mb-20 grid grid-cols-3  gap-x-6 pt-10'>
+       <div className='mb-20 grid grid-cols-3 gap-x-6 pt-10 max-xl:gap-x-4 max-lg:grid-cols-2 max-sm:grid-cols-1 '>
           <TestimonialList testimonials={test.slice(0, extended ? 5 : 2)} />
           <TestimonialList testimonials={test.slice(6, extended ? 11 : 8)} />
           <TestimonialList testimonials={test.slice(10, extended ? 15 : 12)} />
