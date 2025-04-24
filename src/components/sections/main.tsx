@@ -6,7 +6,7 @@ interface PageProps{
 
 export const Main=({children}: PageProps )=>{
     return(
-    <div className="">
+    <div>
         {children}
     </div>)
 }

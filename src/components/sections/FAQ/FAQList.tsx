@@ -28,14 +28,14 @@ const FAQList: React.FC<FAQProps> = ({
   return (
     <motion.ul
       className="m-auto flex max-w-[51.625rem] flex-col -pt-24"
-      initial={{x:0,y:100}}
+      initial={{x:10,y:100}}
       animate={inView ? "visible" : "hidden"}
       variants={{
         hidden: { opacity: 0 },
         visible: {
           transition: {
             staggerChildren: 0.5,
-            ease: "easeIn",
+            ease: "easeInOut",
           },
         },
       }}

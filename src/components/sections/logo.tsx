@@ -3,19 +3,19 @@ import { logos } from "../../utils/content";
 
 export default function Logo() {
   return (
-    <section className="bg-gradient-to-top ">
-      <div className="m-auto max-w-[90rem] px-24  max-xl:py-28">
-        <p className="text-primary-50 last m-auto mb-20 text-center text-xl">
+    <section className="bg-gradient-to-top">
+      <div className="m-auto max-w-[90rem] px-24 py-28 max-xl:px-16 max-xl:py-24 max-lg:px-8 max-md:px-6">
+        <p className="text-primary-50 last m-auto mb-20 text-center text-xl max-xl:text-lg/8 max-sm:mb-16">
           Organizations powered by{" "}
-          <span className="font-bold tracking-tight md:text-base">NoteFlow</span>
+          <span className="font-bold tracking-tight">NoteFlow</span>
         </p>
-        <div className="grid  ">
-          <ul className="flex justify-between items-center gap-x-6">
+        <div className="flex flex-col gap-y-16 max-md:flex-row max-md:items-center max-md:justify-around max-sm:gap-x-14">
+          <ul className="flex flex-wrap justify-between max-md:flex-col max-md:gap-y-16">
             {logos.slice(0, 4).map((logo) => {
               return (
                 <li key={logo.id}>
                   <Image
-                    className="h-10 w-28 md:gap-0"
+                    className="h-10 w-10/12 max-xl:h-8  max-lg:h-7"
                     src={logo.src}
                     alt={logo.alt}
                     key={logo.id}
@@ -24,12 +24,12 @@ export default function Logo() {
               );
             })}
           </ul>
-          <ul className="flex justify-between gap-x-4">
+          <ul className="flex flex-wrap justify-between max-md:flex-col max-md:gap-y-16">
             {logos.slice(4).map((logo) => {
               return (
                 <li key={logo.id}>
                   <Image
-                    className="h-10 w-28"
+                    className="h-10 w-10/12 max-xl:w-10/12 max-xl:h-8 max-lg:h-7"
                     src={logo.src}
                     alt={logo.alt}
                     key={logo.id}
@@ -43,3 +43,4 @@ export default function Logo() {
     </section>
   );
 }
+

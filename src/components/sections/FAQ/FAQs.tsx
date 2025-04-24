@@ -26,7 +26,7 @@ const FAQs = () => {
 
 
   return (
-    <section className='bg-gradient-to-bottom justify-items-center -z-1 max-w-screen  border-white pb-10'>
+    <section className='bg-gradient-to-bottom justify-items-center -z-1 max-w-screen  border-white pb-10 pt-10'>
       <div className=' max-w-[90rem]'>
           <h1 className='text-primary-50 text-center text-6xl/10 tracking-tight sm:text-5xl '>Frequently Asked Questions</h1>
           <div className='text-primary-50 justify-items-center mt-6 relative gap-3 pb-5'>

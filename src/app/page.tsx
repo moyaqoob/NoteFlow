@@ -11,7 +11,6 @@ import FAQ from '@/components/sections/FAQ/FAQs'
 import Testimonial from '@/components/sections/Testimonials/Testimonial'
 import Footer from '@/components/sections/Footer'
 import Modal from '@/components/sections/Modal/Modal'
-import SignUpModal from '@/components/sections/Modal/SignupModal'
 const page = () => {
   return (
    <div>

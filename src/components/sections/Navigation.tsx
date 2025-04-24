@@ -24,8 +24,7 @@ function Navigation() {
         {navigationLinks.map((link) => (
           <li key={link.id}>
             <a href={link.href}
-            className="hover:text-primary-100 transition-colors"
-            >{link.link}</a>
+            className="hover:text-primary-100 transition-colors">{link.link}</a>
           </li>
         ))}
       </ul>
